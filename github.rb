@@ -8,7 +8,7 @@ class GithubClient
     # Build client
     @http = Net::HTTP.new(uri.host, uri.port)
     @http.use_ssl = true
-    @http.set_debug_output($stdout)
+    # @http.set_debug_output($stdout)
     build_request
   end
 
