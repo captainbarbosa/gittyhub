@@ -2,11 +2,53 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>User Profile</title>
+  <title>User Profile for <%= @user["login"]  %></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/app.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-  <h1>User Profile</h1>
-  <div><%= @person.body  %></div>
+  <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" class="github-logo">
+  <div>
+  <div class = "profile-pic"><img src="<%= @user["avatar_url"]  %>"></div>
+  <div class = "name"><%= @user["name"]  %></div>
+  <div class = "username"><%= @user["login"]  %></div>
+  </div>
+  <div class ="repos-list-group">
+    <% @repos.each do |repo| %>
+    <div class="list-group">
+      <a href="#" class="list-group-item">
+      <h3 class="list-group-item-heading"><%= repo["name"] %></h4>
+      <p class="list-group-item-text"><%= repo["description"] %></p>
+      <p class="list-group-item-text"><%= repo["updated_at"] %></p>
+      </a>
+    </div>
+    <% end %>
+    <div class = "user-info">
+      <ul>
+        <li><%= @user["company"]  %></li>
+        <li><%= @user["location"]  %></li>
+        <li><%= @user["email"]  %></li>
+        <li><<%= @user["blog"]  %>/li>
+        <li>Joined on <%= @user["created_at"]  %></li>
+      </ul>
+    </div>
+    <div class = "social-stats">
+      <ul>
+        <li><%= @user["followers"]  %></li>
+        <li><%= @user["following"]  %></li>
+      </ul>
+    </div>
+    <div class = "organizations">Organizations</div>
+  </div>
+  <div class ="user-tabs">
+    <ul>
+      <li>Contributions</li>
+      <li>Repositories</li>
+      <li>Public activity</li>
+  </div>
+  <div class ="repo-search">
+    Find a repository
+  </div>
+
 </body>
 </html>
