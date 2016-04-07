@@ -4,6 +4,7 @@ require "sinatra"
 require "json"
 require "pry"
 require "./github"
+require 'date'
 
 get "/lookup" do
   render_template("views/home.html.erb")

@@ -1,70 +1,143 @@
-h1 {
-  font-family: courier;
-  color: gray;
-  padding-left: 2%
+header {
+  padding: 0% 10%;
+  border-bottom: 1px solid #DDDDDD;
+  margin: auto;
+  padding-bottom: 8px;
 }
 
-h3 {
-  font-family: courier;
-  color: red;
-  padding-left: 2%
+.header-logo {
+  height: 40px;
+  width: 40px;
 }
 
-img {
-  height: 230px;
-  width: 230px;
-  border-radius: 5px;
-}
-
-.github-logo {
-  height: 55px;
-  width: 55px;
-  display: block;
-  margin-left: 5%;
-  padding: 5px;
-}
-
-.profile-pic {
-  float: left;
-  margin-left: 6%
-}
-
-div.name{
-  position: absolute;
-  margin-top: 240px;
-  margin-left: 6%;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-div.username{
-  position: absolute;
-  margin-top: 270px;
-  margin-left: 6%;
-  font-size: 20px;
+.form-control {
+  width: 35%;
+  height: 26px;
+  display: inline-block;
 }
 
 ul {
   list-style: none;
-
+  display: inline-block;
+  margin: 0px;
 }
 
-.list-group {
-  margin-bottom: 0px;
+ul.user-links{
+  padding-left: 250px;
 }
 
-
-div.repos-list-group {
-  padding-left: 29%;
-  padding-top: 5%
-  width: 85%;
-
+ul.menu-options {
+  padding-left: 0px;
+  font-weight: bold;
+  font-size: 13px;
 }
 
-.list-group-item-heading{
-  color: red;
+li {
+  float: left;
+  padding: 8px;
+}
+
+.navbar-menu {
+  display: inline-block;
+}
+
+.mini-profile-pic {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+}
+
+.profile-pic {
+  height: 230px;
+  width: 230px;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-top: 20px;
+  float:left;
+}
+
+h1.name {
+  padding-left: 10%;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 28px;
+  margin: 10px 0px 0px 0px;
+}
+
+h2.username {
+  padding-left: 10%;
+  font-family: "Helvetica Neue";
+  margin: 0px !important;
+  font-size: 21px;
+  font-weight: 300;
+  color: #666666;
+  letter-spacing: 0.5px;
+}
+
+.sidebar {
+  width: 20%;
+  margin-left: 10%;
+  float: left;
+}
+
+ul.activity-bar {
+  margin-top: 30px;
+}
+
+li.activity {
+  width:140px;
+  color: #666666;
+}
+
+#search-repo-form{
+  margin-left: 25px;
+}
+
+#repo-search-field{
+  height: 34px;
+}
+
+.repos {
+  display: block;
+  margin-left: 32%;
+  margin-top: 50px;
+}
+
+h3.repo-name {
+  font-family: "Helvetica Neue";
   text-transform: lowercase;
+  color: #4078C0;
+  font-weight: bold;
   font-size: 20px;
-  font-family: helvetica;
-  font-weight: bold
+  border-top: 1px solid #EEEEEE;
+  padding-top: 30px;
+  display: inline-block;
+}
+
+.repo-stats {
+  color: #888888;
+  display:inline-block;
+  margin: -3% 24% 0% 0%;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+svg.repo-star, svg.forks-count, svg.contributions, svg.repos, svg.activity {
+  vertical-align: text-bottom;
+  display: inline-block;
+  margin:0px;
+}
+
+
+p.repo-description {
+  font-family: "Helvetica Neue";
+  color: #666666;
+  width: 55%;
+}
+
+p.updated-at {
+  font-family: "Helvetica Neue";
+  color: #8D8D8D;
+  padding-bottom: 30px;
 }
